@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UserPlaylistCollectionViewCell" customModule="UserFlow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="102"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="745" verticalCompressionResistancePriority="745" translatesAutoresizingMaskIntoConstraints="NO" id="Bcp-po-yFU">
+                        <rect key="frame" x="44.5" y="0.0" width="62" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Bcp-po-yFU" secondAttribute="height" multiplier="1:1" id="Bcg-ma-c2n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H65-hb-Q1x"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz7-fQ-9Kh">
+                        <rect key="frame" x="0.0" y="85.5" width="151" height="14.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Vz7-fQ-9Kh" secondAttribute="baseline" constant="5" id="3vw-fh-XKx"/>
+                <constraint firstItem="Bcp-po-yFU" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="5HH-QZ-5el"/>
+                <constraint firstItem="Vz7-fQ-9Kh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Bcp-po-yFU" secondAttribute="bottom" id="FH8-y4-l78"/>
+                <constraint firstItem="Bcp-po-yFU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="MGp-Cw-nXP"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Bcp-po-yFU" secondAttribute="bottom" priority="999" constant="40" id="WFn-NP-AR0"/>
+                <constraint firstItem="Vz7-fQ-9Kh" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="hdt-zz-hWG"/>
+                <constraint firstItem="Vz7-fQ-9Kh" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" id="mbj-8l-KAr"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="Bcp-po-yFU" secondAttribute="top" id="xar-sn-jpe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="151" height="102"/>
+            <connections>
+                <outlet property="imageView" destination="Bcp-po-yFU" id="drv-ZD-Dfk"/>
+                <outlet property="titleLabel" destination="Vz7-fQ-9Kh" id="QGr-Jx-kQZ"/>
+            </connections>
+            <point key="canvasLocation" x="118.5" y="-114"/>
+        </collectionViewCell>
+    </objects>
+</document>
