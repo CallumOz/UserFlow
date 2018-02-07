@@ -40,6 +40,14 @@
 		F257A52D202B851C00066BC9 /* TracksResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257A52C202B851C00066BC9 /* TracksResultEntity.swift */; };
 		F257A52F202B914B00066BC9 /* ArtistEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257A52E202B914B00066BC9 /* ArtistEntity.swift */; };
 		F2D9BBDF202BA93600A854BA /* ThreeColumnLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBDE202BA93600A854BA /* ThreeColumnLayout.swift */; };
+		F2D9BBE1202BB20000A854BA /* PlaylistInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBE0202BB20000A854BA /* PlaylistInteractorTests.swift */; };
+		F2D9BBE4202BB26D00A854BA /* PlaylistEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBE3202BB26D00A854BA /* PlaylistEntityTests.swift */; };
+		F2D9BBEB202BB30E00A854BA /* MockUserPlaylistsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBEA202BB30E00A854BA /* MockUserPlaylistsInteractor.swift */; };
+		F2D9BBED202BB32F00A854BA /* MockPlaylistInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBEC202BB32F00A854BA /* MockPlaylistInteractor.swift */; };
+		F2D9BBEF202BB58C00A854BA /* MockPlaylistEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBEE202BB58C00A854BA /* MockPlaylistEntity.swift */; };
+		F2D9BBF1202BB5D700A854BA /* MockTrackEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBF0202BB5D700A854BA /* MockTrackEntity.swift */; };
+		F2D9BBF3202BB70900A854BA /* PlaylistsResultEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBF2202BB70900A854BA /* PlaylistsResultEntityTests.swift */; };
+		F2D9BBF6202BBF6100A854BA /* MockUserPlaylistsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BBF5202BBF6100A854BA /* MockUserPlaylistsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +114,14 @@
 		F257A52C202B851C00066BC9 /* TracksResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksResultEntity.swift; sourceTree = "<group>"; };
 		F257A52E202B914B00066BC9 /* ArtistEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistEntity.swift; sourceTree = "<group>"; };
 		F2D9BBDE202BA93600A854BA /* ThreeColumnLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeColumnLayout.swift; sourceTree = "<group>"; };
+		F2D9BBE0202BB20000A854BA /* PlaylistInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistInteractorTests.swift; sourceTree = "<group>"; };
+		F2D9BBE3202BB26D00A854BA /* PlaylistEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistEntityTests.swift; sourceTree = "<group>"; };
+		F2D9BBEA202BB30E00A854BA /* MockUserPlaylistsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPlaylistsInteractor.swift; sourceTree = "<group>"; };
+		F2D9BBEC202BB32F00A854BA /* MockPlaylistInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlaylistInteractor.swift; sourceTree = "<group>"; };
+		F2D9BBEE202BB58C00A854BA /* MockPlaylistEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlaylistEntity.swift; sourceTree = "<group>"; };
+		F2D9BBF0202BB5D700A854BA /* MockTrackEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrackEntity.swift; sourceTree = "<group>"; };
+		F2D9BBF2202BB70900A854BA /* PlaylistsResultEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsResultEntityTests.swift; sourceTree = "<group>"; };
+		F2D9BBF5202BBF6100A854BA /* MockUserPlaylistsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPlaylistsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				F2250F7320262DDE004DE197 /* UserFlowTests.swift */,
+				F2D9BBE5202BB29000A854BA /* Mocks */,
 				F2250FAF2027A8AE004DE197 /* Interactors */,
+				F2D9BBE2202BB23F00A854BA /* Entities */,
 				F2250F922026347D004DE197 /* View Models */,
 				F2250F7520262DDE004DE197 /* Info.plist */,
 			);
@@ -283,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				F2250FB02027A8E9004DE197 /* UserPlaylistsInteractorTests.swift */,
+				F2D9BBE0202BB20000A854BA /* PlaylistInteractorTests.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -313,6 +332,51 @@
 				F2D9BBDE202BA93600A854BA /* ThreeColumnLayout.swift */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		F2D9BBE2202BB23F00A854BA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9BBF2202BB70900A854BA /* PlaylistsResultEntityTests.swift */,
+				F2D9BBE3202BB26D00A854BA /* PlaylistEntityTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F2D9BBE5202BB29000A854BA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9BBE7202BB2BD00A854BA /* Interactors */,
+				F2D9BBE6202BB2B200A854BA /* Entities */,
+				F2D9BBF4202BBF4100A854BA /* Routers */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F2D9BBE6202BB2B200A854BA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9BBEE202BB58C00A854BA /* MockPlaylistEntity.swift */,
+				F2D9BBF0202BB5D700A854BA /* MockTrackEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F2D9BBE7202BB2BD00A854BA /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9BBEA202BB30E00A854BA /* MockUserPlaylistsInteractor.swift */,
+				F2D9BBEC202BB32F00A854BA /* MockPlaylistInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		F2D9BBF4202BBF4100A854BA /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9BBF5202BBF6100A854BA /* MockUserPlaylistsRouter.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,9 +543,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UserFlowTests/Pods-UserFlowTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -645,7 +716,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D9BBE4202BB26D00A854BA /* PlaylistEntityTests.swift in Sources */,
+				F2D9BBEB202BB30E00A854BA /* MockUserPlaylistsInteractor.swift in Sources */,
+				F2D9BBE1202BB20000A854BA /* PlaylistInteractorTests.swift in Sources */,
+				F2D9BBF1202BB5D700A854BA /* MockTrackEntity.swift in Sources */,
 				F2250F7420262DDE004DE197 /* UserFlowTests.swift in Sources */,
+				F2D9BBEF202BB58C00A854BA /* MockPlaylistEntity.swift in Sources */,
+				F2D9BBF3202BB70900A854BA /* PlaylistsResultEntityTests.swift in Sources */,
+				F2D9BBED202BB32F00A854BA /* MockPlaylistInteractor.swift in Sources */,
+				F2D9BBF6202BBF6100A854BA /* MockUserPlaylistsRouter.swift in Sources */,
 				F2250FB12027A8E9004DE197 /* UserPlaylistsInteractorTests.swift in Sources */,
 				F2250F9420263499004DE197 /* UserPlaylistsViewModelTests.swift in Sources */,
 			);

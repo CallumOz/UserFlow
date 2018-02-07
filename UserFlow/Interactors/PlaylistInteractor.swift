@@ -30,7 +30,7 @@ class PlaylistInteractor: PlaylistInteractorType {
     let duration: Variable<TimeInterval?>
 
     let tracks = Variable<[TrackEntityType]>([])
-    let hasMore = Variable<Bool>(true)
+    let hasMore: Variable<Bool>
 
     private var nextURL: URL?
 
@@ -40,6 +40,7 @@ class PlaylistInteractor: PlaylistInteractorType {
     init(playlist: PlaylistEntityType) {
         self.playlist = playlist
         self.nextURL = playlist.tracklist
+        self.hasMore = Variable(self.nextURL != nil)
 
         self.title = Variable(playlist.title)
         self.logo = Variable(playlist.picture)

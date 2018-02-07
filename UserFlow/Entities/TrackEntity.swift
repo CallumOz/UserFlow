@@ -14,7 +14,7 @@ protocol TrackEntityType {
     var titleShort: String? { get }
     var duration: Int? { get }
 
-    var artist: ArtistEntity? { get }
+    var artist: ArtistEntityType? { get }
 }
 
 struct TrackEntity: TrackEntityType {
@@ -22,7 +22,7 @@ struct TrackEntity: TrackEntityType {
     let titleShort: String?
     let duration: Int?
 
-    let artist: ArtistEntity?
+    let artist: ArtistEntityType?
 
     init(json: JSON) {
         self.title = json["title"].string
