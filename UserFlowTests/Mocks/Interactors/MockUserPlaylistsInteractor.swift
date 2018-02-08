@@ -20,11 +20,16 @@ class MockUserPlaylistsInteractor: UserPlaylistsInteractorType {
     }
 
     let calledLoad = PublishSubject<Void>()
-    let mockLoad = PublishSubject<Void>()
+    var mockLoad: PublishSubject<Void>!
 
-    func load() -> Observable<Void> {
+    private func createMockLoadAndCall() -> PublishSubject<Void> {
+        mockLoad = PublishSubject<Void>()
         calledLoad.onNext(())
         return mockLoad
+    }
+
+    func load() -> Observable<Void> {
+        return createMockLoadAndCall()
     }
 }
 
